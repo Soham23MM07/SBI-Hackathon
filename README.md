@@ -6,7 +6,6 @@
 AI-powered multi-agent banking assistant that proactively identifies eligible customers, automates document verification, orchestrates Banking Mitra services, and enables end-to-end financial inclusion through multilingual conversations.
 
 ![Status](https://img.shields.io/badge/Status-Under%20Development-blue)
-![License](https://img.shields.io/badge/License-MIT-green)
 ![AI](https://img.shields.io/badge/AI-Agentic%20AI-purple)
 ![Workflow](https://img.shields.io/badge/Automation-n8n-orange)
 ![Database](https://img.shields.io/badge/Database-PostgreSQL-blue)
