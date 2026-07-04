@@ -58,6 +58,8 @@ Input Type Router (Text / Voice / Image / Document / Unsupported)
 | Voice Response | OpenAI (Audio Generation) | Converts text responses back into spoken audio when needed |
 
 ## Workflow Screenshots
+<img width="1173" height="648" alt="Screenshot 2026-07-05 015319" src="https://github.com/user-attachments/assets/7ad48e74-a63f-4b7b-ad07-6e3c571105f3" />
+
 
 <img width="1003" height="581" alt="Screenshot 2026-07-05 015333" src="https://github.com/user-attachments/assets/0017da06-6c48-4048-92aa-3f5a47f617fe" />
 
