@@ -237,13 +237,19 @@ Projected Outcomes
 ```
 SBI-SAATHI
 │
-├── frontend/
-├── backend/
-├── agents/
-├── workflows/
+├── 01-Customer-Intelligence/
+├── 02-AI-Outreach/
+├── 03-Conversation-Agent/
+├── 04-Document-Intelligence/
+├── 05-Decision-Engine/
+├── 06-Banking-Mitra/
+├── 07-Service-Completion/
+├── 08-Feedback-Learning/
+│
+├── dashboards/
+├── integrations/
+├── n8n-workflows/
 ├── database/
-├── api/
-├── dashboard/
 ├── docs/
 ├── assets/
 ├── README.md
