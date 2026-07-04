@@ -1,109 +1,288 @@
-# AI Automation Workflows
+<div align="center">
 
-A collection of production-ready AI automation workflows built on **n8n** and **Make.com**, covering voice/chat agents, meeting scheduling, WhatsApp bots, and video editing.
+# 🏦 SBI Saathi
+### Agentic AI Platform for Rural Financial Inclusion
 
----
+AI-powered multi-agent banking assistant that proactively identifies eligible customers, automates document verification, orchestrates Banking Mitra services, and enables end-to-end financial inclusion through multilingual conversations.
 
-## Workflows
+![Status](https://img.shields.io/badge/Status-Under%20Development-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+![AI](https://img.shields.io/badge/AI-Agentic%20AI-purple)
+![Workflow](https://img.shields.io/badge/Automation-n8n-orange)
+![Database](https://img.shields.io/badge/Database-PostgreSQL-blue)
 
-### n8n Workflows (`/n8n-workflows`) -
-
-#### 1. Chatbot — Phone Agent & Voiceflow (`chatbot-phone-agent-voiceflow.json`)
-An AI-powered phone agent integrated with Voiceflow. Features:
-- RAG (Retrieval-Augmented Generation) using Qdrant vector store + OpenAI embeddings
-- Google Calendar integration for appointment booking
-- Order tracking via webhook
-- Multi-agent routing (RAG agent, calendar agent, tracking agent)
-- GPT-4o-mini powered responses
-
-**Stack:** n8n · OpenAI · Qdrant · Google Calendar · Voiceflow
+</div>
 
 ---
 
-#### 2. Scheduling Meet (`scheduling-meet.json`)
-A voice-and-text meeting scheduler powered by an AI assistant ("Angie"). Features:
-- Handles both voice (speech-to-text) and text messages via Telegram
-- Allowlist-based access control
-- Google Calendar event creation
-- Gmail integration for meeting context
-- Simple memory for conversational continuity
+# 📖 Overview
 
-**Stack:** n8n · OpenAI Whisper · Google Calendar · Gmail · Telegram
+SBI Saathi is an **Agentic AI platform** designed to bridge the gap between underserved banking customers and financial services offered by the State Bank of India.
+
+Instead of waiting for customers to visit the branch, SBI Saathi proactively identifies eligible customers, reaches out in their preferred language, verifies documents using AI, coordinates Banking Mitras, and guides customers until their banking services are successfully activated.
+
+The platform aims to improve financial inclusion by reducing dormant PMJDY accounts, simplifying KYC completion, increasing scheme enrollment, and minimizing unnecessary branch visits.
 
 ---
 
-#### 3. WhatsApp Chatbot — Audio, Text & PDF (`whatsapp-chatbot-audio-text-pdf.json`)
-A fully functional WhatsApp chatbot that handles multiple input types:
-- **Text** messages → AI agent responds
-- **Audio** messages → transcribed via Whisper, then processed
-- **Images** → analyzed with vision model
-- **PDFs** → extracted and fed into the AI agent
-- Simple memory for context retention
+# 🎯 Problem Statement
 
-**Stack:** n8n · WhatsApp Business API · OpenAI · Whisper
+Millions of customers remain disconnected from banking benefits because of:
 
----
+- Dormant PMJDY accounts
+- Incomplete KYC
+- Lack of awareness about eligible schemes
+- Language barriers
+- Difficulty understanding required documents
+- Multiple branch visits
+- Low digital literacy
 
-#### 4. Smart Meeting Scheduler — Zoho CRM (`smart-meeting-scheduler-zoho.json`)
-Automated lead-to-meeting pipeline integrated with Zoho CRM. Features:
-- Triggered by new leads in Zoho CRM
-- Detects lead timezone automatically
-- Checks sales rep calendar availability with buffer time
-- Generates personalized meeting invites via Gemini
-- Sends invites and logs meetings back to Zoho CRM
-- Fallback email if no slots are available
-
-**Stack:** n8n · Zoho CRM · Google Calendar · Google Gemini · Gmail
+As a result, customers miss insurance, pension, welfare schemes, and banking opportunities while banks face increased operational workload.
 
 ---
 
-### Make.com Blueprints (`/make-blueprints`)
+# 💡 Solution
 
-#### 5. Video Editing Agent (`video-editing-agent.blueprint.json`)
-An AI-driven video editing automation agent built on Make.com.
+SBI Saathi introduces a **Multi-Agent AI ecosystem** that autonomously manages the complete customer journey.
 
-**Stack:** Make.com
+The AI:
 
----
-
-## Getting Started
-
-### Import n8n Workflows
-1. Open your n8n instance
-2. Go to **Workflows → Import from File**
-3. Select the `.json` file from `/n8n-workflows`
-4. Configure your credentials (OpenAI, Google Calendar, etc.)
-5. Activate the workflow
-
-### Import Make.com Blueprints
-1. Open Make.com
-2. Go to **Scenarios → Create a new scenario**
-3. Click the three-dot menu → **Import Blueprint**
-4. Upload the `.blueprint.json` file from `/make-blueprints`
-5. Configure your connections and activate
+- Identifies eligible customers
+- Determines the best communication channel
+- Communicates in regional languages
+- Explains eligible banking schemes
+- Verifies uploaded documents
+- Detects missing information
+- Recommends additional benefits
+- Coordinates Banking Mitras
+- Schedules appointments
+- Tracks customer progress
+- Collects feedback
+- Continuously improves future decisions
 
 ---
 
-## Prerequisites
+# 🤖 AI Agents
 
-| Service | Used By |
-|---|---|
-| OpenAI API | All n8n workflows |
-| Google Calendar API | Chatbot Phone Agent, Scheduling Meet, Smart Meeting Scheduler |
-| Qdrant | Chatbot Phone Agent |
-| Telegram Bot | Scheduling Meet |
-| WhatsApp Business API | WhatsApp Chatbot |
-| Zoho CRM | Smart Meeting Scheduler |
-| Google Gemini API | Smart Meeting Scheduler |
+## 🟢 Saathi Swagat
+Customer onboarding and KYC completion assistant.
 
----
+**Responsibilities**
 
-## Docs
-
-The `/docs` folder contains the project pitch deck (`pitch-deck.pdf`).
+- Detect incomplete onboarding
+- Explain missing documents
+- Guide customers through KYC
 
 ---
 
-## License
+## 🔵 Saathi Disha
+Benefit discovery and customer guidance agent.
 
-MIT
+**Responsibilities**
+
+- Detect eligible schemes
+- Explain benefits
+- Guide document collection
+- Increase financial awareness
+
+---
+
+## 🟣 Saathi Bhavishya
+Future planning and lifecycle agent.
+
+**Responsibilities**
+
+- Predict future customer needs
+- Recommend insurance
+- Pension planning
+- Investment opportunities
+- Family-based banking products
+
+---
+
+# ⚙️ Key Features
+
+- ✅ Intelligent Customer Identification
+- ✅ AI-powered Customer Segmentation
+- ✅ Multilingual WhatsApp Assistant
+- ✅ SMS & Voice Outreach
+- ✅ AI Document Verification
+- ✅ Human-in-the-loop Validation
+- ✅ Banking Mitra Coordination
+- ✅ Nearby Print Shop Discovery
+- ✅ Smart Appointment Scheduling
+- ✅ Online / Offline Decision Engine
+- ✅ Live Customer Journey Tracking
+- ✅ Real-time SBI Dashboard
+- ✅ Analytics & Feedback Loop
+
+---
+
+# 🏗 System Architecture
+
+```
+                Customer Signals
+                        │
+                        ▼
+         Customer Intelligence Agent
+                        │
+                        ▼
+            AI Outreach Engine
+       (WhatsApp / SMS / Voice)
+                        │
+                        ▼
+           Conversation Agent
+                        │
+                        ▼
+          AI Document Verification
+                        │
+              ┌─────────┴─────────┐
+              ▼                   ▼
+      Online Processing      Offline Processing
+              │                   │
+              ▼                   ▼
+      Service Completion     Banking Mitra
+              │                   │
+              └─────────┬─────────┘
+                        ▼
+               Feedback & Learning
+                        │
+                        ▼
+                  SBI Dashboard
+```
+
+---
+
+# 🔄 Customer Journey
+
+1. Customer Identification
+2. Personalized Outreach
+3. Customer Conversation
+4. Document Collection
+5. AI Verification
+6. Decision Engine
+7. Banking Mitra / Online Processing
+8. Benefit Activation
+9. Customer Feedback
+10. Continuous Learning
+
+---
+
+# 🛠 Tech Stack
+
+## Frontend
+
+- React.js
+- Tailwind CSS
+
+## Backend
+
+- Node.js
+- Express.js
+
+## Database
+
+- PostgreSQL
+
+## AI & Automation
+
+- n8n
+- OpenAI GPT
+- Google Gemini
+- OCR Engine
+- Rule Engine
+- AI Decision Models
+
+## APIs
+
+- WhatsApp Business API
+- SMS Gateway
+- Voice Call API
+- Google Maps API
+- Calendar API
+- REST APIs
+- Webhooks
+
+---
+
+# 📊 Business Impact
+
+Projected Outcomes
+
+| Metric | Impact |
+|---------|---------|
+| Dormant Account Activation | ↑ 20–30% |
+| Scheme Enrollment | ↑ 25–40% |
+| Branch Footfall | ↓ 30–40% |
+| Processing Time | ↓ 50–70% |
+| Banking Mitra Productivity | ↑ 35–45% |
+| Customer Engagement | 2–3× Higher |
+
+---
+
+# 🚀 Future Roadmap
+
+- AI-powered Financial Advisor
+- Voice-first Banking Assistant
+- Predictive Financial Health Score
+- Offline-first Banking Support
+- Smart Loan Recommendation Engine
+- Hyper-personalized Banking Journey
+- SBI Core Banking Integration
+
+---
+
+# 📂 Project Structure
+
+```
+SBI-SAATHI
+│
+├── frontend/
+├── backend/
+├── agents/
+├── workflows/
+├── database/
+├── api/
+├── dashboard/
+├── docs/
+├── assets/
+├── README.md
+└── LICENSE
+```
+
+---
+
+# 🔒 Security
+
+- Customer Consent Management
+- Secure API Communication
+- Role-based Access Control
+- Human Approval for Sensitive Tasks
+- AI never requests OTP or PIN
+- Banking-grade data handling
+
+---
+
+# 🌍 Vision
+
+To transform financial inclusion by enabling every eligible citizen to seamlessly access banking services, government schemes, insurance, pensions, and digital banking through an intelligent, multilingual, and human-centric AI ecosystem.
+
+---
+
+# 👨‍💻 Developed By
+
+**Kumar Arpit**
+
+National Institute of Technology Warangal
+
+Built for the **SBI Agentic AI Hackathon 2026**
+
+---
+
+<div align="center">
+
+### ⭐ If you found this project interesting, consider giving it a star!
+
+Building the future of inclusive banking with Agentic AI.
+
+</div>
